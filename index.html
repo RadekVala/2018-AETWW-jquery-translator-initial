@@ -29,7 +29,37 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
+  <div class="container">
+    <div class="card mt-5">
+      <div class="card-header">
+        Translator App
+      </div>
+      <div class="card-body">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Text for translation" aria-label="Text for translation" aria-describedby="button-addon">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon">Translate</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="alert alert-primary m-3 animated bounce" role="alert">
+        Getting the translation...
+      </div>
+
+    </div>
+
+    <div class="card translation-result mt-5">
+      <h5 class="card-header">Translation Result</h5>
+      <div class="card-body">
+        <!--  here goes the result -->
+      </div>
+    </div>
+  </div>
+
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
